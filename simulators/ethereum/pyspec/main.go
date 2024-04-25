@@ -124,6 +124,6 @@ func repoLink(testPath string) string {
 	fileDir := filepath.Dir(filePath)
 	fileBase := filepath.Base(fileDir)
 	fileName := filepath.Join(filepath.Dir(fileDir), "test_"+fileBase+".py")
-	repoLink := fmt.Sprintf("https://github.com/ethereum/execution-spec-tests/tree/main/%v", fileName)
+	repoLink := fmt.Sprintf("https://github.com/ethereum/execution-spec-tests/tree/eip-6110/%v", fileName)
 	return repoLink
 }
